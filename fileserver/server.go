@@ -127,6 +127,7 @@ func main() {
 		fmt.Printf("%d total keys\n", keyCount)
 		//************************
 	})
+	// ListenAndServe will strt a new goroutine for each new connection
 	log.Fatal(http.ListenAndServe(":8080", mux))
 
 	//******************** Hang so program doesn't exit
